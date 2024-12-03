@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #28a745; 
+    color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.card {
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    background-color: #fff;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+#repoList li {
+    margin-bottom: 0.5rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+#profileSection .row {
+    gap: 2rem; 
+    justify-content: space-around; 
+}
+
+#profile,
+#repos {
+    width: 45%; 
+}
+
+@media (max-width: 768px) {
+    #profile,
+    #repos {
+        width: 100%; 
+    }
+
+    #profileSection .row {
+        flex-direction: column; /* Stack cards vertically on small screens (responsive) */
+    }
+}
